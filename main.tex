@@ -1,6 +1,6 @@
 \PassOptionsToPackage{dvipsnames}{xcolor}
 
-\documentclass[10pt,letterpaper]{altacv}
+\documentclass[12pt,letterpaper]{altacv}
 
 \geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
 
@@ -8,13 +8,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage[default]{lato}
 
-\definecolor{Mulberry}{HTML}{72243D}
-%\definecolor{Mulberry}{HTML}{17b50e} %subtext color
-\definecolor{SlateGrey}{HTML}{555555}
-\definecolor{LightGrey}{HTML}{666666} %subtext color 2
-\colorlet{heading}{Sepia}
-\colorlet{accent}{Mulberry}
-\colorlet{emphasis}{SlateGrey}
+\definecolor{Mulberry}{HTML}{09332e}
+\definecolor{CaribbeanCurrent}{HTML}{156064}
+\definecolor{Azure}{HTML}{3F84E5}
+\definecolor{CambridgeBlue}{HTML}{92B4A7}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{CaribbeanCurrent}
+\colorlet{accent}{Azure}
+\colorlet{emphasis}{CaribbeanCurrent}
 \colorlet{body}{LightGrey}
 
 \renewcommand{\itemmarker}{{\small\textbullet}}
@@ -26,17 +27,17 @@
 
 \begin{document}
 
-\name{Ethan Ferguson}
-\tagline{}
+\name{Ata Noor}
+\tagline{Searching for a Summer 2023 Internship}
 \photo{6cm}{}
 \personalinfo{
   \begin{flushright}
     \normalsize
-    \github{\href{https://github.com/ethanf108}{ethanf108}}
+    \github{\href{https://github.com/atauln}{atauln}}
     \\
-    \linkedin{\href{https://linkedin.com/in/ethanf108}{ethanf108}}
-    \printinfo{\faPhone}{(310) 989-7483}
-    \email{\href{mailto:ethanf108@gmail.com}{ethanf108@gmail.com}}
+    \linkedin{\href{https://linkedin.com/in/atanoor}{atanoor}}
+    \printinfo{\faPhone}{(513) 582 6809}
+    \email{\href{mailto:ataulnoor75@gmail.com}{ataulnoor75@gmail.com}}
   \end{flushright}
 }
 
@@ -44,125 +45,96 @@
 \makecvheader
 \end{adjustwidth}
 
-\cvsection[page1sidebar]{Experience}
+\cvsection[page1sidebar]{Projects}
+
+\cvproject
+        {TigerWallet}
+        {\href
+                {https://github.com/atauln/tigerwallet}
+                {github.com/atauln/tigerwallet}}
+        {
+                Created a full stack \textbf{Flask} web application with a \textbf{MySQL}
+                database and complete \textbf{Docker} containerization that allows users
+                to sign into their university dining account and perform \textbf{data analysis}
+                and \textbf{caching} to present better statistics, decrease page load times
+                significantly, and allow for notification support. Also enabled monitoring with
+                \textbf{Sentry} and messaging with \textbf{Twilio} SMS. Hosted on an 
+                \textbf{OKD} instance at the Computer Science House.
+        }
+        {
+                \cvtag{Python}
+                \cvtag{Flask}
+                \cvtag{Jinja2}
+                \cvtag{HTML/CSS}
+                \cvtag{MySQL}
+	}
+
+\divider
+
+\cvproject
+        {LetMeIn App}
+        {\href
+                {https://github.com/ComputerScienceHouse/LetMeInApp}
+                {github.com/ComputerScienceHouse/LetMeInApp}}
+        {
+                Built an \textbf{Android} application with \textbf{Kotlin} and \textbf{XML}
+                to connect to a \textbf{web server} via a \textbf{websocket} connection.
+                This allows members of the Computer Science House to receive live
+                \textbf{notification} and native support for the LetMeIn application,
+                instead of having to use the website.
+        }
+        {
+                \cvtag{Android}
+                \cvtag{Kotlin}
+                \cvtag{XML}
+                \cvtag{Websockets}
+	}
+
+\divider
+
+\cvproject
+        {PARCSTAR}
+        {\href
+                {https://github.com/atauln/PARCSTAR}
+                {github.com/atauln/PARCSTAR}}
+        {
+                Used \textbf{Java} to receive microphone input and send it over a
+                \textbf{websocket} connection. The information is received by a
+                backend that performs \textbf{FFT} on the audio to get the
+                musical \textbf{pitches} from the audio. Primarily created for
+                use with the \textbf{guitar}, it later was usable with a wide variety
+                of instruments.
+        }
+        {
+                \cvtag{Java}
+                \cvtag{Swing}
+                \cvtag{Websockets}
+                \cvtag{FFT}
+	}
+
+
+\cvsection{Experience}
 
 \cvexperience
         {\href
-                {https://www.aero.org/}
-                {The Aerospace Corp.}}
-        {Software Engineer Intern II, Cloud Systems Engineer}
+                {https://www.rit.edu/science/chester-f-carlson-center-imaging-science}
+                {Chester F. Carlson Center for Imaging Sciences}}
+        {Student Systems Administrator}
         {
-                Developed Star Tracker in \textbf{Scheme} from peer-reviewed documents,
-                consolidated \textbf{SSL} certificates into \textbf{Kubernetes} secrets,
-                used \textbf{Helm} to deploy a \textbf{Kafka} cluster,
-                and worked in a large team to create \textbf{React} components to
-                handle CRUD operations for a \textbf{Spring Boot} backend and
-                \textbf{MongoDB} database.
+                \begin{itemize}
+                        \item Maintaining, expanding and upgrading infrastructure
+                        \item Evaluation of currently implemented technologies
+                        \item Promotion of research and resource usage among staff and student body
+                        \item Troubleshooting of multiple operating systems
+                        \item Communicating between multiple deparmtments
+                        \item Detect and mitigate hardware and software issues
+                        \item Use scripting languages like Python and Powershell to automate daily tasks
+                        \item Manage building-wide password and computer security regulations
+                \end{itemize}
         }
-        {May 2022 -- December 2022}
+        {August 2022 -- Current}
 
 \divider
-
-\cvexperience
-        {\href
-                {https://www.witr.rit.edu/}
-                {WITR Henrietta 89.7 FM}}
-        {Internal Developer}
-        {
-                Created a \textbf{Spring Boot}, \textbf{React}, and \textbf{PostgresQL}
-                full-stack application for both public and member-only use, restructured
-                web streaming service to allow for internet streaming of
-                on-air content, and deployed both applications on RIT's internal
-                cloud service.
-        }
-        {November 2021 -- May 2022}
-
-\divider
-
-\cvexperience
-        {\href
-                {https://www.evconnect.com/}
-                {EV Connect Inc.}}
-        {Software Engineer Intern}
-        {
-                Ensured the reliability of the EV member portal by creating UI tests
-                in \textbf{JavaScript} with \textbf{Jest}, created web-scraping and
-                data-transformation scripts in \textbf{Java} to convert website data
-                into \textbf{Excel} documents, and contributed to the common testing
-                framework used by the EV Connect QA team.
-        }
-        {May 2021 - August 2021}
-
-\medskip
-
-\cvsection{Projects}
-
-\cvproject
-        {CSH Pings}
-        {\href
-                {https://github.com/ethanf108/csh-pings}
-                {github.com/ethanf108/csh-pings}}
-        {
-                Created full-stack application in \textbf{Spring Boot}, \textbf{React},
-                and \textbf{MariaDB} that centralizes notification processing and dispatch
-                for all CSH services through a public \textbf{REST API}, and allows
-                CSH members to configure applications and notification services.
-                Interfaces with \textbf{Keycloak} and \textbf{LDAP}, and APIs for services
-                such as \textbf{Slack}, \textbf{Telegram}, \textbf{Discord}, and is deployed
-                on \textbf{Openshift Kubernetes}. Pull Requests from CSH members are encouraged.
-        }
-        {\cvtag{Java}\cvtag{Spring}\cvtag{React}\cvtag{MariaDB}\cvtag{OKD Kubernetes}\cvtag{LDAP}\cvtag{Keycloak}}
-
-\divider
-
-\cvproject
-        {Intraspect}
-        {\href
-                {https://github.com/ethanf108/Intraspect}
-                {github.com/ethanf108/Intraspect}}
-        {
-                Created a library to read, analyze, and manipulate \textbf{Java class files},
-                designed a \textbf{CLI} to allow users to quickly dissassemble \textbf{.class}
-                files, and leveraged \textbf{Git} to allow for multiple features to be
-                developed concurrently between me and my project partner.
-        }
-        {\cvtag{Java}\cvtag{JVM Assembly}\cvtag{JVM Bytecode}}
-
-\divider
-
-\cvproject
-        {Clobber}
-        {\href
-                {https://github.com/ethanf108.clobber}
-                {github.com/ethanf108/clobber}}
-        {
-                Created a \textbf{Systemd service} that monitors GPUs,
-                allows users to queue \textbf{Docker Containers} as GPU jobs,
-                schedules jobs based off of the GPUs they request,
-                and kills any other processes using the GPUs.
-                Integrated with CLI to allow users to interact with the \textbf{Clobber Daemon}
-                through a \textbf{Unix Socket}, and view the status of their queued jobs.
-        }
-        {\cvtag{Rust}\cvtag{NVML}\cvtag{Systemd}\cvtag{Unix Sockets}\cvtag{Podman}\cvtag{Docker}}
-
-\divider
-
-\cvproject
-        {Tft Plug}
-        {\href
-                {https://github.com/ethanf108/tftplug}
-                {github.com/ethanf108/tftplug}}
-        {
-                Created a \textbf{Systemd service} that hosts a \textbf{TFTP} server
-                on a \textbf{Proxmox} VM for serving multiple \textbf{Linux} distros
-                for PXE-booting new servers over the network.
-                \textbf{DHCP} options also had to be configured, so older machines
-                who do not support the newer \textbf{iPXE} standard can find the
-                \textbf{IP} address of the server.
-                Also integrates with Plug, the CSH local advertisement service,
-                to display images as the background of the distro-selection screen.
-        }
-        {\cvtag{Java}\cvtag{GNU/Linux}\cvtag{TFTP}\cvtag{PXE Boot}}
 
 \medskip
 
