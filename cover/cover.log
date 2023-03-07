@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.1.19)  24 FEB 2023 11:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.3.2)  6 MAR 2023 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -227,32 +227,32 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 Package: charter 2020/03/25 PSNFSS-v9.3 (P.Dyballa) 
 ) (./info.tex)
 LaTeX Font Info:    Trying to load font information for OT1+bch on input line 2
-5.
+8.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 ) (./cover.aux)
 \openout1 = `cover.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-Package hyperref Info: Link coloring OFF on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+Package hyperref Info: Link coloring OFF on input line 28.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -265,9 +265,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count197
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 
 (./cover.out) (./cover.out)
 \@outlinefile=\write3
@@ -297,32 +297,42 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 38.
+nput line 41.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 39.
+ input line 42.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <12> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 39.
+n input line 42.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 40.
+nput line 43.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--54
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--60
 
  []
 
@@ -330,7 +340,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 <sig.png, id=7, 319.1925pt x 164.615pt>
 File: sig.png Graphic file (type png)
 <use sig.png>
-Package pdftex.def Info: sig.png  used on input line 68.
+Package pdftex.def Info: sig.png  used on input line 72.
 (pdftex.def)             Requested size: 108.405pt x 55.90556pt.
  [1
 
@@ -340,8 +350,8 @@ Package rerunfilecheck Info: File `cover.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  11907 strings out of 478238
- 207470 string characters out of 5850456
- 477818 words of memory out of 5000000
+ 207470 string characters out of 5850457
+ 477789 words of memory out of 5000000
  30015 multiletter control sequences out of 15000+600000
  475938 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -353,7 +363,7 @@ onts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/share/texmf-dist/fonts/enc/dvips
 5Brands-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/Font
 Awesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchr
 8a.pfb>
-Output written on cover.pdf (1 page, 69730 bytes).
+Output written on cover.pdf (1 page, 69233 bytes).
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream

@@ -7,6 +7,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[default]{lato}
+\usepackage{MnSymbol}
 
 \definecolor{Mulberry}{HTML}{09332e}
 \definecolor{CaribbeanCurrent}{HTML}{156064}
@@ -27,8 +28,10 @@
 
 \begin{document}
 
+
+
 \name{Ata Noor}
-\tagline{Seeking a Software Engineering Internship for the Summer of 2023}
+\tagline{Seeking a Software Internship for Summer 2023}
 \photo{6cm}{}
 \personalinfo{
   \begin{flushright}
@@ -48,23 +51,24 @@
 \cvsection[page1sidebar]{Projects}
 
 \cvproject
-        {TigerWallet}
+        {$\filledstar$ TigerWallet}
         {\href
                 {https://github.com/atauln/tigerwallet}
                 {github.com/atauln/tigerwallet}}
         {
-                Created a full stack \textbf{Flask} web application with a \textbf{MySQL}
-                database and complete \textbf{Docker} containerization that allows users
-                to sign into their university dining account and perform \textbf{data analysis}
-                and \textbf{caching} to present better statistics, decrease page load times
-                significantly, and allow for notification support. Also enabled monitoring with
-                \textbf{Sentry} and messaging with \textbf{Twilio} SMS. Hosted on an 
-                \textbf{OKD} instance at the Computer Science House.
+                \begin{itemize}
+                        \item Created a full stack \textbf{Flask} web application
+                        \item Integrated with a \textbf{MySQL} database server
+                        \item Containerized with \textbf{Docker} and \textbf{Podman}
+                        \item Handles processing \textbf{user authentication} with university emails
+                        \item Perfoms \textbf{caching} and \textbf{data processing} to provide statistics
+                        \item Enabled notification support for accounts with \textbf{Twilio}
+                        \item Currently hosted on an \textbf{OKD} instance at the Computer Science House
+                \end{itemize}
         }
         {
                 \cvtag{Python}
                 \cvtag{Flask}
-                \cvtag{Jinja2}
                 \cvtag{HTML/CSS}
                 \cvtag{MySQL}
 	}
@@ -77,12 +81,13 @@
                 {https://github.com/ComputerScienceHouse/LetMeInApp}
                 {github.com/ComputerScienceHouse/LetMeInApp}}
         {
-                Built an \textbf{Android} application with \textbf{Kotlin} and \textbf{XML}
-                to connect to a \textbf{web server} via a \textbf{websocket} connection.
-                This allows members of the Computer Science House to receive live
-                \textbf{notifications} and native support for the LetMeIn application,
-                instead of having to use the website.
-        }
+                \begin{itemize}
+                        \item Built an \textbf{Android} application with \textbf{Kotlin}
+                        \item Connects to a \textbf{Golang web server} via a \textbf{websocket} connection
+                        \item Connects to hardware clients via a \textbf{MQTT} server
+                        \item Adds benefits like \textbf{live notifications} for end users
+                \end{itemize}
+}
         {
                 \cvtag{Android}
                 \cvtag{Kotlin}
@@ -98,18 +103,19 @@
                 {https://github.com/atauln/PARCSTAR}
                 {github.com/atauln/PARCSTAR}}
         {
-                Used \textbf{Java} to receive microphone input and send it over a
-                \textbf{websocket} connection. The information is received by a
-                backend that performs \textbf{FFT} on the audio to get the
-                musical \textbf{pitches} from the audio. Primarily created for
-                use with the \textbf{guitar}, it later was usable with a wide variety
-                of instruments.
+                \begin{itemize}
+                        \item Used \textbf{Java} to receive \textbf{microphone} input
+                        \item Sends compressed audio data over a \textbf{websocket} connection
+                        \item Performs \textbf{FFT} audio analysis to get the pitches and amplitudes
+                        \item Usable for a variety of musical instruments
+                \end{itemize}
         }
         {
                 \cvtag{Java}
                 \cvtag{Swing}
                 \cvtag{Websockets}
                 \cvtag{FFT}
+                \cvtag{Audio}
 	}
 
 
@@ -133,8 +139,6 @@
                 \end{itemize}
         }
         {August 2022 -- Current}
-
-\divider
 
 
 \medskip

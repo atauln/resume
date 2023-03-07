@@ -170,11 +170,12 @@
   \smallskip
   \small\textbf{\color{accent}#2}
   | {\textbf{\footnotesize#4}}\par
+  \smallskip
   \footnotesize{#3}\par
   \medskip
 }
 
-\newcommand{\cved}[4]{%
+\newcommand{\cved}[3]{%
   {\large\color{emphasis}#1\par}
   \smallskip
   \normalsize
@@ -190,10 +191,6 @@
   \par
   \smallskip
   }
-  
-  \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.5em}#4}}}%
-  \par
-  \medskip
 }
 
 \newcommand{\cvachievement}[3]{%
