@@ -139,12 +139,14 @@
   \medskip
 }
 
-\newcommand{\cvexperience}[4]{%
+\newcommand{\cvexperience}[5]{%
   \smallskip
   {\normalsize\color{emphasis}#1  \par}
   \smallskip
   {\small\textbf{\color{accent}#2} | {\textbf{\footnotesize\space#4}}\par}
   \smallskip
+  \textbf{\color{accent}#5}
+  \medskip
   \footnotesize\color{body}#3\par
   \smallskip
 }

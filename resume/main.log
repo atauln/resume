@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.7.20)  27 AUG 2024 13:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.4)  4 MAR 2025 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1630,8 +1630,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  36389 strings out of 476076
- 694090 string characters out of 5793775
- 1990187 words of memory out of 5000000
+ 694090 string characters out of 5793776
+ 1992187 words of memory out of 5000000
  57967 multiletter control sequences out of 15000+600000
  833865 words of font info for 87 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1640,10 +1640,10 @@ Here is how much of TeX's memory you used:
 hare/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pfb></usr/share/texmf-dist/
 fonts/type1/typoland/lato/Lato-Regular.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/mnsymbol/MnSymbol12.pfb>
-Output written on main.pdf (1 page, 93123 bytes).
+Output written on main.pdf (1 page, 93284 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
