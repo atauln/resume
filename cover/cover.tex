@@ -5,9 +5,9 @@
 
 
 
-\documentclass[12pt]{letter}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[empty]{fullpage}
+\usepackage[left=0.8in,right=0.8in,top=0.35in,bottom=0.35in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
 \usepackage{fontawesome5}
@@ -15,8 +15,6 @@
 \usepackage{charter}
 
 
-\addtolength{\topmargin}{-0.5in}
-\addtolength{\textheight}{1.0in}
 \definecolor{gr}{RGB}{225,225,225}
 \definecolor{CambridgeBlue}{HTML}{92B4A7}
 \definecolor{Azure}{HTML}{3F84E5}
@@ -26,6 +24,8 @@
 
 
 \begin{document}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
 
 
 % Shaded header banner
@@ -36,7 +36,7 @@
 
 % Header
 \begin{center}
-{\fontsize{28}{0}\selectfont\scshape \myname}
+{\fontsize{28}{34}\selectfont\scshape \myname}\\[0.22in]
 
 \href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
 \href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace in/\mylinkedin}\hfill
@@ -44,35 +44,36 @@
 \faMapMarker\enspace \mylocation
 \end{center}
 
-\vspace{0.2in}
+\vspace{0.4in}
 
 
 % Opening block
-\today\\
-%\vspace{-0.1in}\recipient\\
-%
-%
-%\company\\
-%\street\\
-%\city, \state\ \zip\\
-\\\\\\\\
-\vspace{-0.1in}\greeting\ \recipient,\\
+\today
+
+\vspace{0.04in}
+\recipient\\
+\ifx\company\empty\else\company\\\fi
+\ifx\street\empty\else\street\\\fi
+\ifx\city\empty\else\city, \state\ \zip\\\fi
+
+\vspace{0.06in}
+\greeting\ \recipient,
 
 % Body
-\vspace{-0.1in}\setlength\parindent{24pt}
-\noindent\input{body}
+\vspace{0.04in}
+\input{body}
 
 % Closer
-\vspace{0.1in}
-\vfill
+\vspace{0.04in}
 
 \begin{flushright}
-\closer,
-
-\vspace{-0.1in}\includegraphics[width=1.5in]{sig.png}\vspace{-0.1in}
-
+\begin{minipage}{2in}
+\flushright
+\closer,\\
+\vspace{0.05in}\includegraphics[width=1.0in]{sig.png}\vspace{0.05in}\\
 \myname\\
 \mytitle
+\end{minipage}
 \end{flushright}
 
 \end{document}
