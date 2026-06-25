@@ -1,3 +1,16 @@
+% =========================================================================
+% SINGLE-COLUMN ATS-FRIENDLY RESUME WRAPPER
+% =========================================================================
+% This file serves as the wrapper for the machine-readable, ATS-optimized
+% single-column resume. It uses standard article.cls and maps the same custom
+% AltaCV macros so they render linearly in a single column.
+%
+% Compile this file using:
+%   python3 generate.py
+% Or:
+%   pdflatex main_single_column.tex
+% =========================================================================
+
 \pdfgentounicode=1
 \input{glyphtounicode}
 
@@ -137,6 +150,10 @@
 \input{projects}
 
 \cvsection{Skills}
+% The shared skills.tex uses \cvsubsection{Category} followed by \cvtag{...} and \medskip.
+% To align the category column at exactly 1.6in without changing skills.tex,
+% we temporarily hijack \cvsubsection to start new table rows and output the category
+% name in the first column, and strip out \medskip.
 \newif\iffirstrow
 \firstrowtrue
 \let\oldcvsubsection\cvsubsection
@@ -144,15 +161,16 @@
   \iffirstrow
     \global\firstrowfalse
   \else
-    \\
+    \\ % End the previous row (except for the very first row)
   \fi
-  \textbf{#1:} & 
+  \textbf{#1:} & % Place category text in column 1 and jump to column 2
 }
 \let\oldmedskip\medskip
-\renewcommand{\medskip}{}
+\renewcommand{\medskip}{} % Ignore standard vertical medium skips
 \begin{tabular}{@{}p{1.6in}p{5.7in}@{}}
   \input{skills}
 \end{tabular}
+% Restore the original macros for subsequent sections
 \let\cvsubsection\oldcvsubsection
 \let\medskip\oldmedskip
 
