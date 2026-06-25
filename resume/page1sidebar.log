@@ -1,27 +1,50 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.1.19)  22 FEB 2023 16:12
-entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**/home/siratomxviii/Projects/resume/page1sidebar.tex
-(/home/siratomxviii/Projects/resume/page1sidebar.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-04-10>
+This is LuaTeX, Version 1.22.0 (TeX Live 2026/dev/Arch Linux)  (format=dvilualatex 2026.1.7)  24 FEB 2026 21:56
+ restricted system commands enabled.
+**/home/atom/Projects/Personal/resume/resume/page1sidebar.tex
+(/home/atom/Projects/Personal/resume/resume/page1sidebar.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "/home/atom/.texlive/texmf-var/luate
+x-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lu
+a".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "/home/atom/.texlive/texmf-var/luate
+x-cache/generic/names".
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'.
 ! Undefined control sequence.
-l.1 \cvsection
+l.3 \cvsection
               {Education}
-? 
-! Emergency stop.
-l.1 
-    
-End of file on the terminal!
 
- 
-Here is how much of TeX's memory you used:
- 17 strings out of 478238
- 517 string characters out of 5850456
- 289994 words of memory out of 5000000
- 18355 multiletter control sequences out of 15000+600000
- 469259 words of font info for 28 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 13i,0n,12p,104b,10s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+Here is how much of LuaTeX's memory you used:
+ 18 strings out of 475501
+ 100000,552014 words of node,token memory allocated
+ 324 words of node memory still in use:
+   1 hlist, 1 dir, 2 glue, 3 kern, 1 glyph, 2 attribute, 40 glue_spec, 2 attribu
+te_list nodes
+   avail lists: 2:8,3:3,4:1,5:1
+ 23143 multiletter control sequences out of 65536+600000
+ 14 fonts using 591679 bytes
+ 12i,0n,13p,83b,15s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, bad output DVI file produced!
+No pages of output.
+

@@ -7,13 +7,17 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[default]{lato}
-\usepackage{MnSymbol}
 
-\definecolor{Mulberry}{HTML}{09332e}
+\definecolor{LavenderPurple}{HTML}{9067C6}
 \definecolor{CaribbeanCurrent}{HTML}{156064}
 \definecolor{Azure}{HTML}{3F84E5}
 \definecolor{CambridgeBlue}{HTML}{92B4A7}
 \definecolor{LightGrey}{HTML}{666666}
+\definecolor{JetBlack}{HTML}{253237}
+\definecolor{BlueSlate}{HTML}{5C6B73}
+\definecolor{PeachGlow}{HTML}{F4C095}
+\definecolor{TangerineDream}{HTML}{F7996E}
+\definecolor{Emerald}{HTML}{3AB94F}
 \colorlet{heading}{CaribbeanCurrent}
 \colorlet{accent}{Azure}
 \colorlet{emphasis}{CaribbeanCurrent}
@@ -29,7 +33,7 @@
 \begin{document}
 
 \name{Ata Noor}
-\tagline{Seeking Software Internship for Summer/Fall 2025}
+\tagline{Software Engineer -- Backend \& Systems Design}
 \photo{6cm}{}
 \personalinfo{
   \begin{flushright}
@@ -50,20 +54,36 @@
 \cvsection[page1sidebar]{Experience}
 
 \cvexperience
+        {\href
+                {https://www.rit.edu/computing/department-software-engineering}
+                {RIT Software Engineering}}
+        {Software Developer Intern}
+        {
+                \begin{itemize}
+                        \item Optimized user experience and achieved a 36\% reduction in page load latency by driving autonomous, end-to-end full-stack feature development in a fast-paced environment
+                        \item Containerized services and added orchestration manifests to streamline developer onboarding and CI workflows
+                \end{itemize}
+        }
+        {Fall 2025}
+        {\cvtag{React} \cvtag{NodeJS} \cvtag{PostgreSQL} \cvtag{Docker}}
+
+\divider{}
+
+\cvexperience
             {\href
                 {https://www.mitre.org}
                 {MITRE}}
             {AI Engineering Intern}
             {
               \begin{itemize}
-              \item Worked with \textbf{OpenAI} and \textbf{LlamaIndex} to assess business questions
-              \item Produced a data layer with \textbf{API} sources and a \textbf{Neo4J cluster}
-              \item Wrote \textbf{Openshift} manifests and \textbf{Dockerfiles} to host in an internal namespace
+              \item Architected an internal semantic search platform utilizing OpenAI and LlamaIndex to orchestrate autonomous AI agent discovery across multi-source enterprise data
+              \item Designed and implemented a unified data layer aggregating multiple API sources into a Neo4J graph to enable cross-source queries for networking
+              \item Accomplished accelerated deployment velocity and infrastructure reliability as measured by a 60\% reduction in manual build times, by doing end-to-end container automation and implementing system observability hooks within OpenShift/OKD deployment manifests
               \end{itemize}
             }
-            {June 2024 -- August 2024}
+            {Summer 2024}
             {
-              \cvtag{LlamaIndex} \cvtag{Openshift} \cvtag{Azure} \cvtag{Neo4J}
+              \cvtag{LlamaIndex} \cvtag{OpenShift/OKD} \cvtag{Azure} \cvtag{Neo4J}
             }
 
 \cvexperience
@@ -71,79 +91,35 @@
         {Innovation Intern \& Developer}
         {
                 \begin{itemize}
-                        \item Built a \textbf{Spring Boot} backend with \textbf{Java} and contributed to a \textbf{ReactJS} frontend
-                        \item Utilized an \textbf{Azure} subscription to host a \textbf{MongoDB} cluster
-                        \item Supervised an \textbf{Ubuntu} virtual machine on \textbf{VMWare}
+                        \item Engineered RESTful backend APIs and microservices using Spring Boot and MongoDB to power a real-time internal talent and project marketplace, streamlining cross-departmental resourcing
+                        \item Accomplished scalable backend infrastructure design as measured by high availability capable of supporting 20,000+ active users, by doing cloud database architecture provisioning and integrating AWS-compatible S3 object storage layers
                 \end{itemize}
         }
-        {May 2023 -- August 2023}
+        {Summer 2023}
         {
                 \cvtag{Spring Boot} \cvtag{ReactJS} \cvtag{MongoDB} \cvtag{Azure}
         }
 
-\divider
-
-\cvexperience
-        {\href
-                {https://www.rit.edu/science/chester-f-carlson-center-imaging-science}
-                {Chester F. Carlson Center for Imaging Sciences}}
-        {Student Systems Administrator}
-        {
-                \begin{itemize}
-                        \item Maintained \textbf{department infrastructure} and \textbf{security regulations}
-                        \item Promoted \textbf{research and development} among imaging science students
-                        \item Collaborated in a \textbf{team environment} to complete tickets
-                \end{itemize}
-        }
-        {August 2022 -- Current}
-        {\cvtag{System Administration} \cvtag{Information Technology}}
 
 \medskip
 
 \cvsection{Projects}
 
 \cvproject
-        {$\filledstar$ TigerWallet}
+        {PreconLeague}
         {\href
-                {https://github.com/atauln/tigerwallet}
-                {\github{\href{https://github.com/atauln/tigerwallet}{atauln/TigerWallet}}}}
+                {https://github.com/atauln/PreconLeague}
+                {\github{\href{https://github.com/atauln/PreconLeague}{atauln/PreconLeague}}}}
         {
                 \begin{itemize}
-                        \item Created a full stack \textbf{Flask} web application with \textbf{MySQL}
-                        \item Containerized with \textbf{Docker} and \textbf{Podman}
-                        \item Handles processing \textbf{user authentication} with university emails
-                        \item Currently hosted on an \textbf{OKD} instance at the Computer Science House
+                        \item Launched a full-stack FastAPI/React web app for Magic: The Gathering versioning and discovery; integrated external APIs (Scryfall/Moxfield) with local data caching to ensure low-latency queries and high scalability
                 \end{itemize}
         }
         {
-                \cvtag{Python}
-                \cvtag{Flask}
-                \cvtag{HTML/CSS}
-                \cvtag{MySQL}
-	}
-
-        \divider
-
-        \cvproject
-            {$\filledstar$ RITCRE}
-            {\href
-              {https://github.com/atauln/RITCRE}
-              {\github{\href{https://github.com/atauln/RITCRE}{atauln/RITCRE}}}
-            }
-            {
-              \begin{itemize}
-              \item Used \textbf{Gemini AI} with \textbf{LlamaIndex} to create an assistant that answers questions about RIT courses
-              \item Created a \textbf{Neo4J} cluster to host data from the RIT Courses API
-              \item Created AI actions to access information from upstream APIs
-              \end{itemize}
-            }
-            {
-              \cvtag{LlamaIndex}
-              \cvtag{Python}
-              \cvtag{Docker}
-              \cvtag{Neo4J}
-            }
-            
+                \cvtag{FastAPI}
+                \cvtag{React}
+                \cvtag{PostgreSQL}
+        }
 
 
 

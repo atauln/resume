@@ -145,7 +145,7 @@
   \smallskip
   {\small\textbf{\color{accent}#2} | {\textbf{\footnotesize\space#4}}\par}
   \smallskip
-  \textbf{\color{accent}#5}
+  \footnotesize\textbf{\color{accent}#5}
   \medskip
   \footnotesize\color{body}#3\par
   \smallskip
@@ -204,7 +204,7 @@
 }
 
 \newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=0.75ex,inner ysep =0.6ex,text height=1.5ex,text depth=.25ex]{#1};
 }
 
 \newcommand{\cvskill}[2]{%
