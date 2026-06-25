@@ -68,15 +68,18 @@
  % \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
   %{\end{adjustwidth}}
 
-\newcommand{\emailsymbol}{\faAt}
-\newcommand{\phonesymbol}{\faPhone}
-\newcommand{\homepagesymbol}{\faChain}
-\newcommand{\locationsymbol}{\faMapMarker}
-\newcommand{\linkedinsymbol}{\faLinkedin}
-\newcommand{\twittersymbol}{\faTwitter}
-\newcommand{\githubsymbol}{\faGithub}
+\RequirePackage{accsupp}
+
+\newcommand{\emailsymbol}{\BeginAccSupp{ActualText={Email: }}\faAt\EndAccSupp{}}
+\newcommand{\phonesymbol}{\BeginAccSupp{ActualText={Phone: }}\faPhone\EndAccSupp{}}
+\newcommand{\homepagesymbol}{\BeginAccSupp{ActualText={Website: }}\faChain\EndAccSupp{}}
+\newcommand{\locationsymbol}{\BeginAccSupp{ActualText={Location: }}\faMapMarker\EndAccSupp{}}
+\newcommand{\linkedinsymbol}{\BeginAccSupp{ActualText={LinkedIn: }}\faLinkedin\EndAccSupp{}}
+\newcommand{\twittersymbol}{\BeginAccSupp{ActualText={Twitter: }}\faTwitter\EndAccSupp{}}
+\newcommand{\githubsymbol}{\BeginAccSupp{ActualText={GitHub: }}\faGithub\EndAccSupp{}}
 \newcommand{\orcidsymbol}{\aiOrcid}
-\newcommand{\mailsymbol}{\faEnvelope}
+\newcommand{\mailsymbol}{\BeginAccSupp{ActualText={Email: }}\faEnvelope\EndAccSupp{}}
+
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{\normalfont #1}\hspace{0.5em}#2\hspace{2em}}}
 

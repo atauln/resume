@@ -1,3 +1,5 @@
+\pdfgentounicode=1
+\input{glyphtounicode}
 \PassOptionsToPackage{dvipsnames}{xcolor}
 
 \documentclass[12pt,letterpaper]{altacv}
@@ -12,7 +14,7 @@
 \definecolor{CaribbeanCurrent}{HTML}{156064}
 \definecolor{Azure}{HTML}{3F84E5}
 \definecolor{CambridgeBlue}{HTML}{92B4A7}
-\definecolor{LightGrey}{HTML}{666666}
+\definecolor{LightGrey}{HTML}{3C3C3C}
 \definecolor{JetBlack}{HTML}{253237}
 \definecolor{BlueSlate}{HTML}{5C6B73}
 \definecolor{PeachGlow}{HTML}{F4C095}
@@ -28,7 +30,7 @@
 
 \addbibresource{sample.bib}
 
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 \begin{document}
 
@@ -41,7 +43,7 @@
     \github{\href{https://github.com/atauln}{atauln}}
     \\
     \linkedin{\href{https://linkedin.com/in/atanoor}{atanoor}}
-    \printinfo{\faPhone}{(513) 582 6809}
+    \phone{(513) 582 6809}
     \email{\href{mailto:ataulnoor75@gmail.com}{ataulnoor75@gmail.com}}
   \end{flushright}
 }
@@ -65,7 +67,7 @@
                 \end{itemize}
         }
         {Fall 2025}
-        {\cvtag{React} \cvtag{NodeJS} \cvtag{PostgreSQL} \cvtag{Docker}}
+        {\cvtag{React} \cvtag{Node.js} \cvtag{PostgreSQL} \cvtag{Docker}}
 
 \divider{}
 
@@ -76,29 +78,25 @@
             {AI Engineering Intern}
             {
               \begin{itemize}
-              \item Architected an internal semantic search platform utilizing OpenAI and LlamaIndex to orchestrate autonomous AI agent discovery across multi-source enterprise data
+              \item Architected an internal semantic search platform using OpenAI and LlamaIndex to orchestrate autonomous AI agent discovery across multi-source enterprise data
               \item Designed and implemented a unified data layer aggregating multiple API sources into a Neo4J graph to enable cross-source queries for networking
-              \item Accomplished accelerated deployment velocity and infrastructure reliability as measured by a 60\% reduction in manual build times, by doing end-to-end container automation and implementing system observability hooks within OpenShift/OKD deployment manifests
+              \item Accelerated deployment velocity by 60\% through container automation and system observability hooks within OpenShift/OKD manifests
               \end{itemize}
             }
             {Summer 2024}
             {
-              \cvtag{LlamaIndex} \cvtag{OpenShift/OKD} \cvtag{Azure} \cvtag{Neo4J}
+              \cvtag{LlamaIndex} \cvtag{Spring Boot} \cvtag{React} \cvtag{MongoDB} \cvtag{Neo4J} \cvtag{OpenShift/OKD} \cvtag{Azure}
             }
 
-\cvexperience
-        {}
+\morecvexperience
         {Innovation Intern \& Developer}
         {
                 \begin{itemize}
-                        \item Engineered RESTful backend APIs and microservices using Spring Boot and MongoDB to power a real-time internal talent and project marketplace, streamlining cross-departmental resourcing
-                        \item Accomplished scalable backend infrastructure design as measured by high availability capable of supporting 20,000+ active users, by doing cloud database architecture provisioning and integrating AWS-compatible S3 object storage layers
+                        \item Engineered RESTful backend APIs and microservices using Spring Boot and MongoDB to power a real-time internal talent and project marketplace
+                        \item Designed scalable backend infrastructure supporting 20,000+ active users by provisioning cloud database architectures and integrating AWS S3-compatible storage layers
                 \end{itemize}
         }
         {Summer 2023}
-        {
-                \cvtag{Spring Boot} \cvtag{ReactJS} \cvtag{MongoDB} \cvtag{Azure}
-        }
 
 
 \medskip
@@ -109,7 +107,7 @@
         {PreconLeague}
         {\href
                 {https://github.com/atauln/PreconLeague}
-                {\github{\href{https://github.com/atauln/PreconLeague}{atauln/PreconLeague}}}}
+                {\github{atauln/PreconLeague}}}
         {
                 \begin{itemize}
                         \item Launched a full-stack FastAPI/React web app for Magic: The Gathering versioning and discovery; integrated external APIs (Scryfall/Moxfield) with local data caching to ensure low-latency queries and high scalability
@@ -120,6 +118,26 @@
                 \cvtag{React}
                 \cvtag{PostgreSQL}
         }
+        {}
+
+\cvproject
+        {PlayTracker}
+        {\href
+                {https://github.com/bobbykdhan/PlayTracker}
+                {\github{bobbykdhan/PlayTracker}}}
+        {
+                \begin{itemize}
+                        \item Engineered an automated trading workflow orchestrating Gemini AI to parse free-form Discord trade signals into structured data orders
+                        \item Built execution pipelines using FastAPI and Redis streams for IBKR contract validation, order placement, and Twilio SMS notification delivery
+                \end{itemize}
+        }
+        {
+                \cvtag{FastAPI}
+                \cvtag{Gemini AI}
+                \cvtag{Redis}
+                \cvtag{Twilio}
+        }
+        {}
 
 
 
