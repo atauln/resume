@@ -1,8 +1,8 @@
 \pdfgentounicode=1
 \input{glyphtounicode}
 
-\documentclass[11pt,letterpaper]{article}
-\usepackage[left=0.75in,right=0.75in,top=0.7in,bottom=0.7in]{geometry}
+\documentclass[10pt,letterpaper]{article}
+\usepackage[left=0.5in,right=0.5in,top=0.35in,bottom=0.35in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[default]{lato}
@@ -15,7 +15,7 @@
 \definecolor{Charcoal}{HTML}{3C3C3C}
 \definecolor{Blue}{HTML}{3F84E5}
 
-\setlist[itemize]{leftmargin=*,nosep,itemsep=0.2\baselineskip,after=\vskip0.2\baselineskip}
+\setlist[itemize]{leftmargin=*,nosep,itemsep=0.5pt,parsep=0pt,partopsep=0pt,topsep=0pt}
 
 % Mock commands
 \newcommand{\name}[1]{\def\cvname{#1}}
@@ -47,75 +47,74 @@
     \medskip
     {\small\cvpersonalinfo\par}
   \end{center}
-  \vspace{-1.0em}
-  \rule{\linewidth}{1pt}
+  \vspace{-1.4em}
+  \rule{\linewidth}{0.6pt}
 }
 
 \newcommand{\cvsection}[2][]{
-  \vspace{1.2em}
-  {\color{Teal}\Large\bfseries\MakeUppercase{#2}\par}
-  \vspace{0.2em}
-  \rule{\linewidth}{1pt}\par
-  \vspace{0.3em}
+  \vspace{0.4em}
+  {\color{Teal}\large\bfseries\MakeUppercase{#2}\par}
+  \vspace{0.05em}
+  \rule{\linewidth}{0.6pt}\par
+  \vspace{0.15em}
 }
 
 \newcommand{\cvsubsection}[1]{
-  \vspace{0.5em}
-  {\color{Teal}\large\bfseries{#1}\par}
-  \vspace{0.2em}
+  \vspace{0.2em}\par\noindent\textbf{#1:}\ 
 }
 
 \newcommand{\cvexperience}[5]{
   \begin{minipage}{\linewidth}
-  \vspace{0.5em}
-  \noindent\textbf{\large #1} \hfill \textbf{\small #4} \\
-  \noindent\textit{\color{Blue}#2} \hfill \textbf{\small Tech: } #5 \par
-  \vspace{0.25em}
+  \vspace{0.15em}
+  \noindent\textbf{#1} \hfill \textbf{\small #4} \\
+  \noindent\textit{\color{Blue}\small #2} \hfill \textbf{\small Tech: } {\small #5} \par
+  \vspace{0.05em}
   #3
   \end{minipage}
 }
 
 \newcommand{\morecvexperience}[3]{
   \begin{minipage}{\linewidth}
-  \vspace{0.5em}
-  \noindent\textit{\color{Blue}#1} \hfill \textbf{\small #3} \par
-  \vspace{0.25em}
+  \vspace{0.15em}
+  \noindent\textit{\color{Blue}\small #1} \hfill \textbf{\small #3} \par
+  \vspace{0.05em}
   #2
   \end{minipage}
 }
 
 \newcommand{\cvproject}[5]{
   \begin{minipage}{\linewidth}
-  \vspace{0.5em}
-  \noindent\textbf{\large #1} \hfill #2 \\
-  \noindent\textbf{\small Tech: } #4 \par
-  \vspace{0.25em}
+  \vspace{0.15em}
+  \noindent\textbf{#1} \hfill #2 \\
+  \noindent\textbf{\small Tech: } {\small #4} \par
+  \vspace{0.05em}
   #3
   \end{minipage}
 }
 
 \newcommand{\cved}[3]{
   \begin{minipage}{\linewidth}
-  \vspace{0.5em}
-  \noindent\textbf{\large #1} \hfill \textit{#3} \\
-  \noindent\textit{\color{Blue}#2} \par
+  \vspace{0.15em}
+  \noindent\textbf{#1} \hfill \textit{\small #3} \\
+  \noindent\textit{\color{Blue}\small #2} \par
   \end{minipage}
 }
 
 \newcommand{\cvclub}[4]{
   \begin{minipage}{\linewidth}
-  \vspace{0.5em}
-  \noindent\textbf{\large #1} \hfill \textbf{\small #4} \\
-  \noindent\textit{\color{Blue}#2} \par
-  \vspace{0.25em}
+  \vspace{0.15em}
+  \noindent\textbf{#1} \hfill \textbf{\small #4} \\
+  \noindent\textit{\color{Blue}\small #2} \par
+  \vspace{0.05em}
   #3
   \end{minipage}
 }
 
 \newcommand{\cvtag}[1]{\mbox{\small #1}\quad} % display tags inline with simple spacing
-\newcommand{\divider}{\vspace{0.5em}\par}
+\newcommand{\divider}{\vspace{0.15em}\par}
 
 \begin{document}
+\makeatletter
 
 \name{Ata Noor}
 \tagline{Software Engineer -- Backend \& Systems Design}
