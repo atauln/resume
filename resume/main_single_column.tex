@@ -15,7 +15,8 @@
 \definecolor{Charcoal}{HTML}{3C3C3C}
 \definecolor{Blue}{HTML}{3F84E5}
 
-\setlist[itemize]{leftmargin=*,nosep,itemsep=0.5pt,parsep=0pt,partopsep=0pt,topsep=0pt}
+\setlist[itemize]{leftmargin=*,nosep,itemsep=0.8pt,parsep=0pt,partopsep=0pt,topsep=0pt}
+\setlength{\parindent}{0pt}
 
 % Mock commands
 \newcommand{\name}[1]{\def\cvname{#1}}
@@ -47,54 +48,53 @@
     \medskip
     {\small\cvpersonalinfo\par}
   \end{center}
-  \vspace{-1.4em}
-  \rule{\linewidth}{0.6pt}
+  \vspace{-1.2em}
 }
 
 \newcommand{\cvsection}[2][]{
-  \vspace{0.4em}
+  \vspace{0.5em}\par\noindent
   {\color{Teal}\large\bfseries\MakeUppercase{#2}\par}
-  \vspace{0.05em}
-  \rule{\linewidth}{0.6pt}\par
-  \vspace{0.15em}
+  \vspace{0.55em}
+  \hrule height 0.6pt
+  \vspace{0.4em}\par
 }
 
 \newcommand{\cvsubsection}[1]{
-  \vspace{0.2em}\par\noindent\textbf{#1:}\ 
+  \vspace{0.25em}\par\noindent\textbf{#1:}\ 
 }
 
 \newcommand{\cvexperience}[5]{
   \begin{minipage}{\linewidth}
-  \vspace{0.15em}
+  \vspace{0.35em}
   \noindent\textbf{#1} \hfill \textbf{\small #4} \\
   \noindent\textit{\color{Blue}\small #2} \hfill \textbf{\small Tech: } {\small #5} \par
-  \vspace{0.05em}
+  \vspace{0.15em}
   #3
   \end{minipage}
 }
 
 \newcommand{\morecvexperience}[3]{
   \begin{minipage}{\linewidth}
-  \vspace{0.15em}
+  \vspace{0.35em}
   \noindent\textit{\color{Blue}\small #1} \hfill \textbf{\small #3} \par
-  \vspace{0.05em}
+  \vspace{0.15em}
   #2
   \end{minipage}
 }
 
 \newcommand{\cvproject}[5]{
   \begin{minipage}{\linewidth}
-  \vspace{0.15em}
+  \vspace{0.35em}
   \noindent\textbf{#1} \hfill #2 \\
   \noindent\textbf{\small Tech: } {\small #4} \par
-  \vspace{0.05em}
+  \vspace{0.15em}
   #3
   \end{minipage}
 }
 
 \newcommand{\cved}[3]{
   \begin{minipage}{\linewidth}
-  \vspace{0.15em}
+  \vspace{0.35em}
   \noindent\textbf{#1} \hfill \textit{\small #3} \\
   \noindent\textit{\color{Blue}\small #2} \par
   \end{minipage}
@@ -102,16 +102,16 @@
 
 \newcommand{\cvclub}[4]{
   \begin{minipage}{\linewidth}
-  \vspace{0.15em}
+  \vspace{0.35em}
   \noindent\textbf{#1} \hfill \textbf{\small #4} \\
   \noindent\textit{\color{Blue}\small #2} \par
-  \vspace{0.05em}
+  \vspace{0.15em}
   #3
   \end{minipage}
 }
 
 \newcommand{\cvtag}[1]{\mbox{\small #1}\quad} % display tags inline with simple spacing
-\newcommand{\divider}{\vspace{0.15em}\par}
+\newcommand{\divider}{\vspace{0.3em}\par}
 
 \begin{document}
 \makeatletter
@@ -137,7 +137,24 @@
 \input{projects}
 
 \cvsection{Skills}
-\input{skills}
+\newif\iffirstrow
+\firstrowtrue
+\let\oldcvsubsection\cvsubsection
+\renewcommand{\cvsubsection}[1]{%
+  \iffirstrow
+    \global\firstrowfalse
+  \else
+    \\
+  \fi
+  \textbf{#1:} & 
+}
+\let\oldmedskip\medskip
+\renewcommand{\medskip}{}
+\begin{tabular}{@{}p{1.6in}p{5.7in}@{}}
+  \input{skills}
+\end{tabular}
+\let\cvsubsection\oldcvsubsection
+\let\medskip\oldmedskip
 
 \cvsection{Activities}
 \input{activities}
