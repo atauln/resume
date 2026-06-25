@@ -55,89 +55,14 @@
 
 \cvsection[page1sidebar]{Experience}
 
-\cvexperience
-        {\href
-                {https://www.rit.edu/computing/department-software-engineering}
-                {RIT Software Engineering}}
-        {Software Developer Intern}
-        {
-                \begin{itemize}
-                        \item Optimized user experience and achieved a 36\% reduction in page load latency by driving autonomous, end-to-end full-stack feature development in a fast-paced environment
-                        \item Containerized services and added orchestration manifests to streamline developer onboarding and CI workflows
-                \end{itemize}
-        }
-        {Fall 2025}
-        {\cvtag{React} \cvtag{Node.js} \cvtag{PostgreSQL} \cvtag{Docker}}
-
-\divider{}
-
-\cvexperience
-            {\href
-                {https://www.mitre.org}
-                {MITRE}}
-            {AI Engineering Intern}
-            {
-              \begin{itemize}
-              \item Architected an internal semantic search platform using OpenAI and LlamaIndex to orchestrate autonomous AI agent discovery across multi-source enterprise data
-              \item Designed and implemented a unified data layer aggregating multiple API sources into a Neo4J graph to enable cross-source queries for networking
-              \item Accelerated deployment velocity by 60\% through container automation and system observability hooks within OpenShift/OKD manifests
-              \end{itemize}
-            }
-            {Summer 2024}
-            {
-              \cvtag{LlamaIndex} \cvtag{Spring Boot} \cvtag{React} \cvtag{MongoDB} \cvtag{Neo4J} \cvtag{OpenShift/OKD} \cvtag{Azure}
-            }
-
-\morecvexperience
-        {Innovation Intern \& Developer}
-        {
-                \begin{itemize}
-                        \item Engineered RESTful backend APIs and microservices using Spring Boot and MongoDB to power a real-time internal talent and project marketplace
-                        \item Designed scalable backend infrastructure supporting 20,000+ active users by provisioning cloud database architectures and integrating AWS S3-compatible storage layers
-                \end{itemize}
-        }
-        {Summer 2023}
-
+\input{experience}
 
 \medskip
 
 \cvsection{Projects}
 
-\cvproject
-        {PreconLeague}
-        {\href
-                {https://github.com/atauln/PreconLeague}
-                {\github{atauln/PreconLeague}}}
-        {
-                \begin{itemize}
-                        \item Launched a full-stack FastAPI/React web app for Magic: The Gathering versioning and discovery; integrated external APIs (Scryfall/Moxfield) with local data caching to ensure low-latency queries and high scalability
-                \end{itemize}
-        }
-        {
-                \cvtag{FastAPI}
-                \cvtag{React}
-                \cvtag{PostgreSQL}
-        }
-        {}
+\input{projects}
 
-\cvproject
-        {PlayTracker}
-        {\href
-                {https://github.com/bobbykdhan/PlayTracker}
-                {\github{bobbykdhan/PlayTracker}}}
-        {
-                \begin{itemize}
-                        \item Engineered an automated trading workflow orchestrating Gemini AI to parse free-form Discord trade signals into structured data orders
-                        \item Built execution pipelines using FastAPI and Redis streams for IBKR contract validation, order placement, and Twilio SMS notification delivery
-                \end{itemize}
-        }
-        {
-                \cvtag{FastAPI}
-                \cvtag{Gemini AI}
-                \cvtag{Redis}
-                \cvtag{Twilio}
-        }
-        {}
 
 
 

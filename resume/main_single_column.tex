@@ -1,0 +1,146 @@
+\pdfgentounicode=1
+\input{glyphtounicode}
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[left=0.75in,right=0.75in,top=0.7in,bottom=0.7in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% Define colors to match original or keep neutral
+\definecolor{Teal}{HTML}{156064}
+\definecolor{Charcoal}{HTML}{3C3C3C}
+\definecolor{Blue}{HTML}{3F84E5}
+
+\setlist[itemize]{leftmargin=*,nosep,itemsep=0.2\baselineskip,after=\vskip0.2\baselineskip}
+
+% Mock commands
+\newcommand{\name}[1]{\def\cvname{#1}}
+\newcommand{\tagline}[1]{\def\cvtagline{#1}}
+\newcommand{\personalinfo}[1]{\def\cvpersonalinfo{#1}}
+
+% Social icons mapped to text fallback
+\newcommand{\emailsymbol}{Email: }
+\newcommand{\phonesymbol}{Phone: }
+\newcommand{\homepagesymbol}{Website: }
+\newcommand{\locationsymbol}{Location: }
+\newcommand{\linkedinsymbol}{LinkedIn: }
+\newcommand{\twittersymbol}{Twitter: }
+\newcommand{\githubsymbol}{GitHub: }
+\newcommand{\orcidsymbol}{ORCID: }
+\newcommand{\mailsymbol}{Email: }
+
+\newcommand{\github}[1]{GitHub: #1}
+\newcommand{\linkedin}[1]{LinkedIn: #1}
+\newcommand{\email}[1]{Email: #1}
+\newcommand{\phone}[1]{Phone: #1}
+\newcommand{\printinfo}[2]{#1 #2}
+
+\newcommand{\makecvheader}{
+  \begin{center}
+    {\Huge\bfseries\color{Teal}\cvname\par}
+    \smallskip
+    {\large\bfseries\color{Blue}\cvtagline\par}
+    \medskip
+    {\small\cvpersonalinfo\par}
+  \end{center}
+  \vspace{-1.0em}
+  \rule{\linewidth}{1pt}
+}
+
+\newcommand{\cvsection}[2][]{
+  \vspace{1.2em}
+  {\color{Teal}\Large\bfseries\MakeUppercase{#2}\par}
+  \vspace{0.2em}
+  \rule{\linewidth}{1pt}\par
+  \vspace{0.3em}
+}
+
+\newcommand{\cvsubsection}[1]{
+  \vspace{0.5em}
+  {\color{Teal}\large\bfseries{#1}\par}
+  \vspace{0.2em}
+}
+
+\newcommand{\cvexperience}[5]{
+  \begin{minipage}{\linewidth}
+  \vspace{0.5em}
+  \noindent\textbf{\large #1} \hfill \textbf{\small #4} \\
+  \noindent\textit{\color{Blue}#2} \hfill \textbf{\small Tech: } #5 \par
+  \vspace{0.25em}
+  #3
+  \end{minipage}
+}
+
+\newcommand{\morecvexperience}[3]{
+  \begin{minipage}{\linewidth}
+  \vspace{0.5em}
+  \noindent\textit{\color{Blue}#1} \hfill \textbf{\small #3} \par
+  \vspace{0.25em}
+  #2
+  \end{minipage}
+}
+
+\newcommand{\cvproject}[5]{
+  \begin{minipage}{\linewidth}
+  \vspace{0.5em}
+  \noindent\textbf{\large #1} \hfill #2 \\
+  \noindent\textbf{\small Tech: } #4 \par
+  \vspace{0.25em}
+  #3
+  \end{minipage}
+}
+
+\newcommand{\cved}[3]{
+  \begin{minipage}{\linewidth}
+  \vspace{0.5em}
+  \noindent\textbf{\large #1} \hfill \textit{#3} \\
+  \noindent\textit{\color{Blue}#2} \par
+  \end{minipage}
+}
+
+\newcommand{\cvclub}[4]{
+  \begin{minipage}{\linewidth}
+  \vspace{0.5em}
+  \noindent\textbf{\large #1} \hfill \textbf{\small #4} \\
+  \noindent\textit{\color{Blue}#2} \par
+  \vspace{0.25em}
+  #3
+  \end{minipage}
+}
+
+\newcommand{\cvtag}[1]{\mbox{\small #1}\quad} % display tags inline with simple spacing
+\newcommand{\divider}{\vspace{0.5em}\par}
+
+\begin{document}
+
+\name{Ata Noor}
+\tagline{Software Engineer -- Backend \& Systems Design}
+\personalinfo{
+  \github{\href{https://github.com/atauln}{atauln}} \ \ \textbullet\ \ 
+  \linkedin{\href{https://linkedin.com/in/atanoor}{atanoor}} \ \ \textbullet\ \ 
+  \phone{(513) 582 6809} \ \ \textbullet\ \ 
+  \email{\href{mailto:ataulnoor75@gmail.com}{ataulnoor75@gmail.com}}
+}
+
+\makecvheader
+
+\cvsection{Education}
+\input{education}
+
+\cvsection{Experience}
+\input{experience}
+
+\cvsection{Projects}
+\input{projects}
+
+\cvsection{Skills}
+\input{skills}
+
+\cvsection{Activities}
+\input{activities}
+
+\end{document}
