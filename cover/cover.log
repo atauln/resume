@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.6)  25 JUN 2026 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.9)  12 JUL 2026 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -341,33 +341,33 @@ nput line 41.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 42.
+ input line 43.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <12> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 42.
+n input line 43.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 43.
+nput line 44.
 
 (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 54--58
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
 
  []
 
 (./body.tex)
-<sig.png, id=7, 319.1925pt x 164.615pt>
+<sig.png, id=8, 319.1925pt x 164.615pt>
 File: sig.png Graphic file (type png)
 <use sig.png>
-Package pdftex.def Info: sig.png  used on input line 73.
+Package pdftex.def Info: sig.png  used on input line 74.
 (pdftex.def)             Requested size: 72.26999pt x 37.27037pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 76.
+(Font)              <12> on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 76.
+(Font)              <8> on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 76.
+(Font)              <6> on input line 77.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
@@ -383,10 +383,10 @@ Package rerunfilecheck Info: File `cover.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12751 strings out of 469515
- 217213 string characters out of 5470808
- 615870 words of memory out of 5000000
- 41266 multiletter control sequences out of 15000+600000
+ 12752 strings out of 469515
+ 217222 string characters out of 5470808
+ 615770 words of memory out of 5000000
+ 41267 multiletter control sequences out of 15000+600000
  638769 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,7n,79p,574b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -394,10 +394,10 @@ Here is how much of TeX's memory you used:
 ular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Fre
 e-Solid.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></us
 r/share/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb>
-Output written on cover.pdf (1 page, 78156 bytes).
+Output written on cover.pdf (1 page, 78490 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
