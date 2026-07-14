@@ -123,8 +123,7 @@
 }
 
 \newcommand{\cvsubsection}[1]{%
-  \smallskip%
-  {\color{emphasis}\large\bfseries{#1}\par}\medskip
+  \vspace{0.4em}\par\noindent{\footnotesize\bfseries\color{emphasis}\MakeUppercase{#1}}\par\vspace{0.2em}
 }
 
 % v1.1.4: fixes inconsistent font size
@@ -183,13 +182,23 @@
 }
 
 \newcommand{\cvproject}[5]{%
-  \smallskip
-  {\normalsize\color{emphasis}\textbf{#1} \hfill {\footnotesize\color{accent}#2\hspace{-2em}}\par}
-  \vspace{0.15em}
-  {\footnotesize#4\par}
-  \vspace{0.25em}
-  {\footnotesize\color{body}#3\par}
-  \smallskip
+  \begin{tcolorbox}[
+    blanker,
+    left=15pt,
+    before skip=4pt,
+    after skip=4pt,
+    borderline west={1.5pt}{4pt}{accent!30},
+    overlay={
+      \fill[accent] ([xshift=4.75pt,yshift=-5.5pt]frame.north west) circle (3.5pt);
+      \fill[white] ([xshift=4.75pt,yshift=-5.5pt]frame.north west) circle (1.5pt);
+    }
+  ]
+    {\normalsize\color{emphasis}\textbf{#1} \hfill {\footnotesize\color{accent}#2\hspace{-2em}}\par}
+    \vspace{0.1em}
+    {\footnotesize#4\par}
+    \vspace{0.15em}
+    {\footnotesize\color{body}#3\par}
+  \end{tcolorbox}
 }
 
 \newcommand{\cvclub}[4]{%
@@ -203,21 +212,11 @@
 }
 
 \newcommand{\cved}[3]{%
-  {\large\color{emphasis}#1\par}
-  \smallskip
-  \normalsize
-  
-  \ifstrequal{#2}{}{}{
-  \textbf{\color{accent}#2}
-  \par
-  \smallskip
-  }
-  
-  \ifstrequal{#3}{}{}{
-  \textbf{\color{accent}#3}
-  \par
-  \smallskip
-  }
+  {\large\color{emphasis}\textbf{#1}\par}
+  \vspace{0.15em}
+  \ifstrequal{#2}{}{}{{\normalsize\textbf{\color{accent}#2}}\par}
+  \vspace{0.15em}
+  \ifstrequal{#3}{}{}{{\footnotesize\color{body}#3}\par}
 }
 
 \newcommand{\cvachievement}[3]{%
@@ -229,7 +228,7 @@
 }
 
 \newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=accent!30,fill=accent!5,rounded corners,inner xsep=0.75ex,inner ysep=0.5ex,text height=1.4ex,text depth=.25ex]{\normalfont\footnotesize\color{accent!80!black}#1};
+  \rule[-3pt]{0pt}{14pt}\tikz[baseline]\node[anchor=base,draw=accent!25,fill=accent!3,rounded corners,inner xsep=0.75ex,inner ysep=0.5ex,text height=1.4ex,text depth=.25ex]{\normalfont\footnotesize\color{body}#1};
 }
 
 \newcommand{\cvskill}[2]{%
@@ -327,4 +326,6 @@
   \pagestyle{empty}
   \color{body}
   \raggedright
+  \lineskiplimit=3pt
+  \lineskip=4pt
 }

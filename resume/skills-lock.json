@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "resume-formatter": {
+      "source": "paramchoudhary/resumeskills",
+      "sourceType": "github",
+      "skillPath": "skills/resume-formatter/SKILL.md",
+      "computedHash": "788284eb2f841efd6b59ee984924db4e67794ab842818f04870eb86ee61306c1"
+    }
+  }
+}
