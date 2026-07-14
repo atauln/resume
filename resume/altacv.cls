@@ -143,31 +143,53 @@
 }
 
 \newcommand{\cvexperience}[5]{%
-  \smallskip
-  {\normalsize\color{emphasis}#1  \par}
-  \smallskip
-  {\small\textbf{\color{accent}#2} | {\textbf{\footnotesize\space#4}}\par}
-  \smallskip
-  \footnotesize\textbf{\color{accent}#5}
-  \medskip
-  \footnotesize\color{body}#3\par
-  \smallskip
+  \begin{tcolorbox}[
+    blanker,
+    left=15pt,
+    before skip=2pt,
+    after skip=2pt,
+    borderline west={1.5pt}{4pt}{accent!30},
+    overlay={
+      \fill[accent] ([xshift=4.75pt,yshift=-5.5pt]frame.north west) circle (3.5pt);
+      \fill[white] ([xshift=4.75pt,yshift=-5.5pt]frame.north west) circle (1.5pt);
+    }
+  ]
+    {\normalsize\color{emphasis}\textbf{#2} \hfill {\color{accent!80!black}\footnotesize\faCalendar\space#4}\par}
+    \vspace{0.05em}
+    {\small\color{body!85}#1\par}
+    \vspace{0.1em}
+    {\footnotesize#5\par}
+    \vspace{0.15em}
+    {\footnotesize\color{body}#3\par}
+  \end{tcolorbox}
 }
 
 \newcommand{\morecvexperience}[3]{%
-  {\small\textbf{\color{accent}#1} | {\textbf{\footnotesize\space#3}}\par}
-  \smallskip
-  \footnotesize\color{body}#2\par
-  \smallskip
+  \begin{tcolorbox}[
+    blanker,
+    left=15pt,
+    before skip=2pt,
+    after skip=2pt,
+    borderline west={1.5pt}{4pt}{accent!30},
+    overlay={
+      \fill[accent] ([xshift=4.75pt,yshift=-5.5pt]frame.north west) circle (3.5pt);
+      \fill[white] ([xshift=4.75pt,yshift=-5.5pt]frame.north west) circle (1.5pt);
+    }
+  ]
+    {\normalsize\color{emphasis}\textbf{#1} \hfill {\color{accent!80!black}\footnotesize\faCalendar\space#3}\par}
+    \vspace{0.15em}
+    {\footnotesize\color{body}#2\par}
+  \end{tcolorbox}
 }
 
 \newcommand{\cvproject}[5]{%
-  {\normalsize\color{emphasis}#1 | \textbf{\footnotesize\color{accent}#4}\par}
   \smallskip
-  \textbf{\color{accent}#2}\par
+  {\normalsize\color{emphasis}\textbf{#1} \hfill {\footnotesize\color{accent}#2\hspace{-2em}}\par}
+  \vspace{0.15em}
+  {\footnotesize#4\par}
+  \vspace{0.25em}
+  {\footnotesize\color{body}#3\par}
   \smallskip
-  \footnotesize\color{body}#3\par
-  \medskip
 }
 
 \newcommand{\cvclub}[4]{%
@@ -207,7 +229,7 @@
 }
 
 \newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=0.75ex,inner ysep =0.6ex,text height=1.5ex,text depth=.25ex]{#1};
+  \tikz[baseline]\node[anchor=base,draw=accent!30,fill=accent!5,rounded corners,inner xsep=0.75ex,inner ysep=0.5ex,text height=1.4ex,text depth=.25ex]{\normalfont\footnotesize\color{accent!80!black}#1};
 }
 
 \newcommand{\cvskill}[2]{%
