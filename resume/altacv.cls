@@ -153,9 +153,9 @@
       \fill[white] ([xshift=4.75pt,yshift=-5.5pt]frame.north west) circle (1.5pt);
     }
   ]
-    {\normalsize\color{emphasis}\textbf{#2} \hfill {\color{accent!80!black}\footnotesize\faCalendar\space#4}\par}
+    {\normalsize\color{emphasis}\textbf{#2}\par}
     \vspace{0.05em}
-    {\small\color{body!85}#1\par}
+    {\small\color{body!85}#1 \hfill {\color{accent!80!black}\footnotesize\faCalendar\space#4}\par}
     \vspace{0.1em}
     {\footnotesize#5\par}
     \vspace{0.15em}
